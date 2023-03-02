@@ -148,10 +148,14 @@
   <ItemGroup>
     <ClInclude Include="driver.h" />
     <ClInclude Include="cbtable.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="trace.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cbtable.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cbtable.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
