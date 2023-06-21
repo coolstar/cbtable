@@ -1,4 +1,4 @@
-Coreboot table
+# Coreboot table
 
 This driver can be used to access debug info from Windows on a device running coreboot.
 
