@@ -649,7 +649,7 @@ IN PWDFDEVICE_INIT DeviceInit
 
 	WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&IdleSettings, IdleCannotWakeFromS0);
 	IdleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
-	IdleSettings.IdleTimeout = 1000;
+	IdleSettings.IdleTimeout = 10000;
 	IdleSettings.Enabled = WdfTrue;
 
 	WdfDeviceAssignS0IdleSettings(devContext->FxDevice, &IdleSettings);
