@@ -590,7 +590,7 @@ IN PWDFDEVICE_INIT DeviceInit
 		&queueConfig,
 		WdfIoQueueDispatchParallel);
 	queueConfig.EvtIoDefault = OnTopLevelIoDefault;
-	queueConfig.PowerManaged = WdfFalse;
+	queueConfig.PowerManaged = WdfTrue;
 
 	status = WdfIoQueueCreate(
 		devContext->FxDevice,
@@ -618,7 +618,7 @@ IN PWDFDEVICE_INIT DeviceInit
 	queueConfig.EvtIoRead = OnIoRead;
 	queueConfig.EvtIoWrite = OnIoWrite;
 	//queueConfig.EvtIoDeviceControl = OnIoDeviceControl;
-	queueConfig.PowerManaged = WdfFalse;
+	queueConfig.PowerManaged = WdfTrue;
 
 	status = WdfIoQueueCreate(
 		devContext->FxDevice,
